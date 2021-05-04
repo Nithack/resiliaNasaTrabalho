@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayNasaPicture</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    
+    <container class="container">
+        <container id="pesquisa" class="formContainer">
+            <input id="dateDay" type="date">
+            <button onclick="getNasaApiImagem()">Pesquisar</button>
+        </container>
+        <div id="conteudo" class="conteudo  hide">
+            <div class="logo"><a href="index.html"><img src="/img/logonasa.png" alt=""></a></div>
+            <div class="imagemContainer">
+                <img id="imagem" src="#" alt="">
+            </div>
+            <div id="description">
+
+            </div>
+        </div>
+    </container>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>
